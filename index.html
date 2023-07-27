@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is just to be able to use an emoji as the favicon of this page -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+    />
+
+    <!-- Just a little styling so the page looks better  -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Unbounded:wght@500&display=swap');
+      :root {
+        --color-bg: #f2efea;
+        --color-text: #2b253e;
+        --color-secondary: #df40dc;
+        --color-links: #5d40d6;
+      }
+
+      ::selection {
+        background-color: var(--color-links);
+        color: var(--color-bg);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        padding: 1rem 20rem;
+        /* I avoided media queries so this page would look terrible on small screens */
+      }
+
+      h1 {
+        font-family: 'Unbounded', cursive;
+        letter-spacing: 0.1rem;
+      }
+
+      a {
+        color: var(--color-links);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <title>Week One Assignment | David Adewale</title>
+  </head>
+  <body>
+    <!-- I am making use of a lot of <br/> tags to avoid too much CSS styling as this is an HTML assignment -->
+    <header>
+      <h1 align="center" style="color: var(--color-links)">
+        David's Assignment
+      </h1>
+      <br />
+      <hr />
+    </header>
+    <main>
+      <br />
+      <img
+        src="./assets/img.jpeg"
+        alt="profile-photo"
+        width="100"
+        align="right"
+        style="border-radius: 200px"
+      />
+      <p>
+        Hi, I'm David Adewale with the Trainee ID of <strong>33644</strong>
+        <br />
+        <br />
+        I am a freelance front-end developer and UXUI designer. I started my
+        career as a graphics designer and transitioned into a web design and
+        development. I am a life long learner and a deeply curious mind.
+        <br />
+        <br />
+        Want to know more about me?
+        <a href="http://www.davidwebworks.com/" target="_blank"
+          >Visit my portfolio</a
+        >
+        <span>or my </span>
+        <a href="https://www.github.com/DavidAdewale" target="_blank"
+          >GitHub repository</a
+        >
+      </p>
+      <br />
+      <br />
+      <h2 style="color: var(--color-secondary)">
+        Why did I join CWW Tech Africa?
+      </h2>
+      <br />
+      <p>
+        I am a self-taught designer and developer with a passion for learning
+        and creating. I am eager to connect with other developers and learn from
+        their experiences. I am also excited to put myself out there and take
+        advantage of the opportunities that CWW Africa has to offer. My goal is
+        to stand out, make a great impression, and help my colleagues. I am
+        confident that I can achieve these goals and
+        <strong><mark>launch my career in tech.</mark></strong>
+        <span>✨✨</span>
+      </p>
+      <br />
+      <br />
+      <h3 style="color: var(--color-secondary)">What I'm up to:</h3>
+      <hr />
+      <br />
+      <ul>
+        <li>
+          🔭 I'm currently working as a <strong> freelance developer</strong>
+        </li>
+        <li>🌱 I'm currently learning <strong>React</strong></li>
+        <li>
+          👯 I'm looking to collaborate on
+          <strong>challenging projects</strong>
+        </li>
+        <li>
+          💬 I'm helping people understand
+          <strong>JavaScript, React and Tailwind</strong>
+          <em>(which in turn helps me understand it better)</em>
+        </li>
+        <li>
+          🚀 I will become a <strong>MERN stack developer</strong> by the end of
+          2023.
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h3 style="color: var(--color-secondary)">My recent projects:</h3>
+      <hr />
+      <br />
+      <ul>
+        <li>
+          <a href="https://getdronic.com/" target="_blank">Dronic Smart Plugs</a
+          >: I helped Dronic Smart Plugs, a Lebanese startup company, bring
+          their vision to life with a sleek logo, vibrant colors, and an
+          easy-to-use online shop.
+        </li>
+        <li>
+          <a href="https://pentedtestsite.webflow.io/" target="_blank"
+            >Pented Website</a
+          >: As an apprentice for a Dubai-based startup, I redesigned and built
+          the website of Pented. My work was praised by the company's CEO and
+          senior designers at Microsoft and Meta.
+        </li>
+        <li>
+          <a href="https://travelxpressng.netlify.app/" target="_blank"
+            >TravelXpressNg</a
+          >: I am currently designing and building the website for
+          TravelXpressNg - a travel company in Nigeria.
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <p align="center">
+        &copy; <span id="current-year"></span>
+        <a href="http://www.davidwebworks.com/">David Web Works</a>
+      </p>
+
+      <br />
+    </footer>
+    <!-- This small JavaScript code is just to make the year in the footer dynamic  -->
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById('current-year').textContent = currentYear;
+    </script>
+  </body>
+</html>
